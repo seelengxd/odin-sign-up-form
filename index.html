@@ -37,8 +37,8 @@
           <h2>Let's do this!</h2>
           <div class="input-row">
             <div>
-              <label for="firstName">First Name</label
-              ><input type="text" name="firstName" id="firstName" />
+              <label for="firstName">First Name <span aria-required="true">*</span></label
+              ><input type="text" name="firstName" id="firstName" required/>
             </div>
             <div>
               <label for="lastName">Last Name</label
@@ -58,7 +58,13 @@
           <div class="input-row">
             <div>
               <label for="password">Password</label
-              ><input type="password" name="password" id="password" />
+              ><input
+                type="password"
+                name="password"
+                id="password"
+                pattern=".{8,}"
+                title="Password should be at least 8 characters long."
+              />
             </div>
             <div>
               <label for="confirmPassword">Confirm Password</label
@@ -66,6 +72,8 @@
                 type="password"
                 name="confirmPassword"
                 id="confirmPassword"
+                pattern=".{8,}"
+                title="Password should be at least 8 characters long."
               />
             </div>
           </div>
