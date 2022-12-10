@@ -33,6 +33,7 @@ body {
     text-align: center;
     color: white;
     width: 100%;
+    font-weight: 100;
 }
 
 #logo {
@@ -122,16 +123,21 @@ input {
     padding: 5px;
 }
 
-input:active {
+input:focus {
     border: 1px solid blue;
+    box-shadow: 5px 5px 5px #ccc;
 }
 
 input:invalid {
     border: 1px solid red;
 }
 
-a {
+#main > p > a {
     color: #596D48;
     text-decoration: none;
     font-weight: bold;
+}
+
+#credits > a {
+    color: white;
 }
