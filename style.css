@@ -12,6 +12,7 @@
 
 label {
     text-transform: uppercase;
+    font-size: 0.8rem;
 }
 
 body {
@@ -56,4 +57,81 @@ body {
 
 #logo > img {
     height: 6rem;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 0.5rem 2rem;
+    margin-left: 2rem;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+}
+
+#main {
+    background-color: #F9FAFB;
+    padding: 5rem 0;
+}
+
+#main > * {
+    padding-left: 2rem;
+}
+
+#main > form {
+    padding-left: 0;
+}
+
+#main > * + * {
+    margin-top: 1rem;
+}
+
+#main > p:first-child {
+    width: min(100%, 55ch)
+}
+
+#inputs {
+    background-color: white;
+    box-shadow: 5px 5px 5px #ddd;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+#main > p:nth-child(-n+2) {
+    font-weight: 800;
+}
+
+.input-row {
+    display: flex;
+    gap: 4rem;
+    margin: 1rem 0;
+}
+
+.input-row > div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 15rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+input:active {
+    border: 1px solid blue;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
 }
